@@ -232,6 +232,13 @@ body{
                 width: 430px !important;
                 border-radius: 28px;
             }
+    .leader_grid2{
+    width: 75%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap:1rem;
+   
+}
 }
 .fm{
     background-color: #ddeefa;
@@ -337,6 +344,13 @@ body{
                 width: 150px !important;
                 border-radius: 28px;
             }
+    .leader_grid2{
+    width: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap:1rem;
+   
+}
 }
     .item-set2{
         
@@ -360,13 +374,7 @@ padding-right: 0.5rem;
     grid-template-columns: auto auto auto;
     
 }
-.leader_grid2{
-    width: 75%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-gap:1rem;
-   
-}
+
 .leader_grid2>div{
     margin-top:0.2rem;
     margin-bottom: 0.2rem;
