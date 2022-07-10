@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Data_Sprint_78</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://miro.medium.com/max/741/1*iI8PwD0947jvSePlBlmZJw.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header for Laptop -->
+    <section class="head1">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://dphi.tech/community/" target="_blank">
+                <img src="https://dphi.tech/blog/wp-content/uploads/job-manager-uploads/company_logo/2022/02/main_logo_with_darktext_dphi.png" 
+                class="img1 me-5" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-3">
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-success lh-lg" aria-current="page" href="#">Courses</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown d pe-2">
+                    <a class="nav-link dropdown-toggle text-success lh-lg" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Challenges
+                    </a>
+                    <ul class="dropdown-menu dd" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item " href="https://dphi.tech/challenges/#active">Action/Upcoming</a></li>
+                      <li><a class="dropdown-item " href="https://dphi.tech/challenges/#past">Practice</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown d pe-2">
+                    <a class="nav-link dropdown-toggle text-success lh-lg" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Bootcamps
+                    </a>
+                    <ul class="dropdown-menu dd" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item " 
+                        href="https://dphi.tech/bootcamps?itm_source=website&itm_medium=header&itm_campaign=maybootcamps">
+                        View All Bootcamps</a></li>
+                      <li><a class="dropdown-item " 
+                        href="https://dphi.tech/bootcamps/data-engineering?itm_source=website&itm_medium=header&itm_campaign=maybootcamps">
+                        Data Engineering</a></li>
+                      <li><a class="dropdown-item " 
+                        href="https://dphi.tech/bootcamps/data-science-ac-iitbombay?itm_source=website&itm_medium=header&itm_campaign=maybootcamps">
+                        Data Science by IIT-B Analytics Club and DPhi</a></li>
+                      <li><a class="dropdown-item " 
+                        href="https://dphi.tech/bootcamps/deep-learning-ac-iitbombay?itm_source=website&itm_medium=header&itm_campaign=maybootcamps">
+                        Deep Learning by IIT-B Analytics Club and DPhi</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown d pe-2">
+                    <a class="nav-link dropdown-toggle text-success lh-lg" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu dd" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item " href="https://dphi.tech/notebooks/all-notebooks/">Notebooks</a></li>
+                      <li><a class="dropdown-item " href="https://dphi.tech/live-sessions">Live Sessions</a></li>
+                      <li><a class="dropdown-item " href="https://dphi.tech/accounts/login/?next=/sso/discourse/%3Fsso%3Dbm9uY2U9NzgyMmY3NjYwZTUyZjQ5NjZhZDVjY2NkZTJiODMzN2YmcmV0dXJuX3Nzb191cmw9aHR0cHMlM0ElMkYlMkZkaXNjdXNzLmRwaGkudGVjaCUyRnNlc3Npb24lMkZzc29fbG9naW4%253D%26sig%3D15aff21a61163c08dab30af697db8149fc4595988b3a79ba7379af86f1428b32"
+                        target="_blank">Discuss</a></li>
+                    </ul>
+                  </li>
+
+
+
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-success lh-lg" href="https://dphi.tech/contribute">Donate</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-success lh-lg" href="https://dphi.tech/wall-of-love">Wall of love 
+                        <i class="fa-solid fa-heart text-danger"></i>   </a>
+                  </li>
+
+                  <li class="nav-item ms-5 ps-5">
+                    
+                    <a class="nav-link text-success lh-lg" href="https://dphi.tech/contribute">
+                        <button class="btn btn-outline-success">Login</button>
+                    </a>
+                  </li>
+                  <li class="nav-item ps-2">
+                    <a class="nav-link text-success lh-lg "  href="https://dphi.tech/wall-of-love">
+                        <button class="btn  "
+                        style=" background-color: #73bf7b;
+                        color: #fff;">
+                            Join For Free</button>    
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <!-- Header for smart phone -->
+<section class="head2">
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://dphi.tech/community/">
+            <img src="https://dphi.tech/blog/wp-content/uploads/job-manager-uploads/company_logo/2022/02/main_logo_with_darktext_dphi.png" 
+            class="img1 me-5" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end"
+          style="max-width: 70%;" 
+          tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" style="padding-bottom: 0px;">
+             <p> <p style="margin-bottom: 0px;">
+                Please <a href="https://dphi.tech/accounts/login/" rel="noopener noreferrer" class=" text-success no"> login</a>
+                 to start your data science learnig journey.
+              </p>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </p>
+        
+        </div>
+            <div class="offcanvas-body">
+                <hr>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" aria-current="page" href="https://dphi.tech/courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="https://dphi.tech/challenges/">Challenges</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="https://dphi.tech/notebooks/all-notebooks/">Notebooks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="https://dphi.tech/live-sessions">Live Sessions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" aria-current="page" href="https://dphi.tech/bootcamps">Bootcamps</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="https://dphi.tech/contribute">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="https://dphi.tech/wall-of-love">Wall Of Love</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark"
+                         href="https://dphi.tech/accounts/login/?next=/sso/discourse/%3Fsso%3Dbm9uY2U9Mjg3YWIzODZkZWEzZTdhODRlZWJlMjU5ZGVkOTc4ZTQmcmV0dXJuX3Nzb191cmw9aHR0cHMlM0ElMkYlMkZkaXNjdXNzLmRwaGkudGVjaCUyRnNlc3Npb24lMkZzc29fbG9naW4%253D%26sig%3Dcab0f6786382610384e4409fc837e2d6a7c7f4067c77021d30d5776ba7d7b93c">
+                            Discuss</a>
+                      </li>
+                      <hr class="my-3">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" 
+                        href="https://dphi.tech/accounts/login/?next=/sso/discourse/%3Fsso%3Dbm9uY2U9Mjg3YWIzODZkZWEzZTdhODRlZWJlMjU5ZGVkOTc4ZTQmcmV0dXJuX3Nzb191cmw9aHR0cHMlM0ElMkYlMkZkaXNjdXNzLmRwaGkudGVjaCUyRnNlc3Npb24lMkZzc29fbG9naW4%253D%26sig%3Dcab0f6786382610384e4409fc837e2d6a7c7f4067c77021d30d5776ba7d7b93c">
+                        Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="https://dphi.tech/accounts/signup/">Join For Free</a>
+                      </li>
+                
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+</section>
+
+<section class="land">
+    <div class="container">
+      <div class="text-start pad_top">
+        <p class="p_red">
+          <i class="fa-solid fa-clock "></i> Ended on 13th Jun'22 09:00 PM (India Standard Time)
+        </p>
+        <p>
+          <h2 class="text-light">Data Sprint 78 - Equestrian Tipster Bet Prediction</h2>
+     
+            <div class="btn-group" role="group" aria-label="Basic example" style="top: 0.8rem;">
+              <div class="tt">
+              <span class="ttt">Submission</span>
+          <span>
+              <button type="button" class=" btn btn_la">
+                  <i class="fa-solid fa-arrow-trend-up"></i> 51</button>
+          </span></div>
+
+          <div class="tt">
+          <span class="ttt">Difficulty</span>
+          <span>
+              <button type="button" class=" btn btn_la">
+               	<b>&#10026;</b> Easy</button>
+          </span>
+          </div></div>
+          </div>
+       
+          
+        </p>
+      </div>
+    </div>
+</section>
+<!-- Slides -->
+<section>
+  <div class="container mt-3">
+    <ul class="nav nav-pills nav-pill mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview" aria-selected="true">Overview</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-data-tab" data-bs-toggle="pill" data-bs-target="#pills-data" type="button" role="tab" aria-controls="pills-data" aria-selected="false">Data</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-notebooks-tab" data-bs-toggle="pill" data-bs-target="#pills-notebooks" type="button" role="tab" aria-controls="pills-notebooks" aria-selected="false">Notebooks</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-discussion-tab" data-bs-toggle="pill" data-bs-target="#pills-discussion" type="button" role="tab" aria-controls="pills-discussion" aria-selected="false">Discussion</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-leaderboarder-tab" data-bs-toggle="pill" data-bs-target="#pills-leaderboarder" type="button" role="tab" aria-controls="pills-leaderboarder" aria-selected="false">leaderboarder</button>
+        </li>
+        <li class="nav-item pad_left">
+          <a href="https://dphi.tech/accounts/signup/?next=/challenges/data-sprint-78-equestrian-tipster-bet-prediction/235/overview/about" target="_blank">
+          <button type="button" class="btn"
+          style=" background-color: #73bf7b;
+        color: #fff;">Register</button></a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab" tabindex="0">
+        
+        <!-- Overviews -->
+        <div class="container m_l">
+        <div class="position-relative m-4 bg-success wit" >
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar " role="progressbar" style="width: 100%;background-color: #73bf7b;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm  rounded-pill" style="width: 2rem; height:2rem;background-color: #73bf7b;color: #fff;"><i class="fa-solid fa-check"></i></button>
+          <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm  rounded-pill" style="width: 2rem; height:2rem;background-color: #73bf7b;color: #fff;"><i class="fa-solid fa-check"></i></button>
+          <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm  rounded-pill" style="width: 2rem; height:2rem;background-color: #73bf7b; color: #fff;"><i class="fa-solid fa-check"></i></button>
+        </div>
+        <br>
+        <div class="position-relative m-4 mt-3 pt-4 wit2" >
+          
+          <div class="  position-absolute top-0 start-0 translate-middle" >
+          <p>
+           <b> Challenge Starts</b> <br>
+            <smalll>10 Jun 09:00 pm</smalll>
+          </p>
+          </div>
+          <div  class=" position-absolute top-0 start-50 translate-middle" >
+          <p>
+           <b> Registration Ends</b><br>
+            <small>13 Jun 09:00 pm</small>
+          </p>
+          </div>
+          <div  class=" position-absolute top-0 start-100 translate-middle">
+          <p>
+           <b> Challenge Ends</b><br>
+            <small>13 Jun 09:00 pm</small>
+          </p>
+          </div>
+        </div></div>
+        <!--  -->
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills nav-pill2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">About</button>
+            <button class="nav-link" id="v-pills-evaluation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-evaluation" type="button" role="tab" aria-controls="v-pills-evaluation" aria-selected="false">Evaluation</button>
+            </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            
+            <!-- about -->
+            <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab" tabindex="0">
+  
+              <div>
+                <p>
+                    <p>The traditional approach in attempting to make a profit from horse-racing, 
+                        using machine learning techniques,
+                         is to use systems involving dozens and dozens of variables. </p>
+                         <p>These systems include the following types of variables:
+                            <br>
+                            Horse - Name, Sex, Age, Pedigree, Weight, Speed over various distances, 
+                            race data with finishing times and positions, Trainer info, Jockey info.
+                        <br>
+                        Track info - Track, track conditions - etc. <br>And a whole lot more.
+                        </p>
+                         <p>
+                            Taking a different approach from the conventional ones we collect,
+                             maintain and use data from various 'Tipsters'. 
+                             The tipsters use their skill to study the horses and make 
+                             a prediction - that they think a particular horse will win a particular race.
+                              We take those tipsters predictions and put them through a machine learning 
+                              algorithm (microsoft azure) asking it to predict a 'win' or 'lose' based 
+                              upon the tipsters performance history.</p>
+                              <p>We have a database of approx. 39,000 bets using 31 odd tipsters. 
+                                Fifteen tipsters are active and sixteen tipsters are inactive 
+                                The betting history for the inactive tipsters is used in the dataset as 
+                                it appears to add 'weight' to the system when considering active tips.
+                                 We have been using this system live for three months now and although it 
+                                 has it's ups and downs - it makes money! </p>
+                                 <p>We are looking to further optimize the system to reach it's maximum efficiency 
+                                    coupled with a betting strategy to increase profitability.
+                                     Your Task is to create a Machine Learning model more efficient than ours </p>
+                </p>
+            </div>
+  
+            </div>
+            <!-- evaluation -->
+            <div class="tab-pane fade" id="v-pills-evaluation" role="tabpanel" aria-labelledby="v-pills-evaluation-tab" tabindex="0">
+           <div>
+            <p>
+              <b><p>Evaluation Criteria</p></b>
+              <p>Submissions are evaluated using Accuracy Score.</p>
+            </p>
+            <b><p>Leaderboard:</p></b>
+            <ul>
+              <li>This challenge does partial evaluation.</li>
+              <li>The initial/public leadeaboard is based on 50% of test data.</li>
+              <li>The final results (private leaderboad) will be displayed after the challenge ends.</li>
+              <li>So, please note that your results can vary in public and private leaderboards.</li>
+            </ul>
+            <p>
+              <b>How do we evaluate?</b><br>
+              Once we release the data, anyone can download it, build a model, and make a submission.
+               We give competitors a set of data (training data) with both the independent and dependent variables.
+              We also release another set of data (test dataset) with just the independent variables, and we hide the
+               dependent variable that corresponds with this set. You submit the predicted values of the dependent 
+               variable for this set and we compare it against the actual values.
+              The predictions are evaluated based on the evaluation metric defined in the datathon.
+              The public leaderboard that is calculated during the competition evaluates only 50% of the test dataset,
+               whereas the private leaderboard will be calculated based on the remaining 50% dataset.
+                Hence, you might see some variation in ranks during and after the Datathon.
+            </p>
+            <b>
+              <em>
+                  Participants are also requested to submit their Notebook with proper documentation.
+                   We believe this helps to learn from each other in the community. Further, we 
+                  also select the best notebooks and share them with the community on social media 
+                  and other communication channels.
+              </em>
+            </b>
+            </div>
+           
+          </div>
+        </div>
+       </div>
+        
+  
+      </div>
+
+      <!-- data -->
+      <div class="tab-pane fade" id="pills-data" role="tabpanel" aria-labelledby="pills-data-tab" tabindex="0">
+  
+        <div class="data_grid">
+          <div>
+              <div>
+                  <p>
+                      <p>This dataset contains 5000 records of features collected
+                           from various 'Tipsters'  to predict a 'win' or 'lose' based upon the tipsters performance history.
+                          <br>
+                          The following columns are used in the dataset - 
+                      </p>
+                      <ul>
+                          <li>Track - The name of the track. 
+                              Some tipsters favour some tracks more than others and this affects their profit margin.</li>
+                      <li>
+                          Horse - The name of the horse.
+                      </li>
+                      <li>
+                          Bet Type - Is the bet a 'Win' bet or an 'Each Way' bet.
+                      </li>
+                      <li>
+                          Odds - The odds that the tipster presenting the bet say they got for the bet. When you actually place a bet you rarely get the predicted odds. 
+                          Would the system be better served by lowering the odds by 10% to 20% which would be more realistic?
+                      </li>
+                      <li>
+                          Result - Did the bet Win or Lose.
+                      </li>
+                      <li>Tipster Active - Is the tipster active - true or false</li>
+                          </ul>
+                          <p>
+                              <b>Sample submission:</b>
+                              You should submit a CSV file with a header row and the sample submission can be found below:
+                          </p>
+                      
+                          <b> Result</b>
+                  </p>
+                  <div class="data_grid1">
+                      <div>0</div>
+                      <div>1</div>
+                      <div>0</div>
+                      <div>1</div>
+                      <div>1</div>
+                  </div>
+                  <h5>Saving Prediction File & Sample Submission</h5>
+                  <p>
+                      You can find more details on how to save a prediction file here:
+                      <a href=" https://discuss.dphi.tech/t/how-to-submit-predictions/548" target="_blank"> https://discuss.dphi.tech/t/how-to-submit-predictions/548</a><br>
+                      Etc. <br>Note that the header name should be ‘Result’ else it will throw an evaluation error.
+                      <hr>
+                      <h5>Notebook Submission</h5>
+                      <b>Steps to follow to submit your notebook:</b>
+                      <ul>
+                          <li>Go to the
+                              <a href="https://dphi.tech/challenges/data-sprint-45-sign-language-hand-gesture-recognition/153/notebooks/all-notebooks/" target="_blank" rel="noopener noreferrer">
+                               Notebook section </a>
+                               on this challenge page</li>
+                               <img src="https://dphi-courses.s3.ap-south-1.amazonaws.com/Datathons/upload_notebook.jpg" alt="" class="data_img1">
+                       <li>Make sure to make the visibility of your notebook as 'public' while uploading the notebook.</li>
+                      <img src="https://dphi-courses.s3.ap-south-1.amazonaws.com/Datathons/notebook_visibility.jpg" alt="" class="data_img2">      
+                  <li>
+                      Provide
+                      <b> Notebook Title, Summary,</b>
+                       add some 
+                       <b>tags</b>, go to 
+                       <b>next</b>,
+                       <b> chose a file </b>and 
+                       click on 
+                       <b>Upload</b>.
+                  </li>    
+                  <img src="https://dphi-courses.s3.ap-south-1.amazonaws.com/Datathons/upload_notebook_2.jpg"
+                   alt="" class="data_img3">
+                  </ul>
+                  </p>
+              </div>
+          </div>
+          <div>
+              <div class="bor_left" >
+              <h5 class="left_pad">Resources</h5>
+              <a class="left_pad"
+               href="https://s3.us-west-1.wasabisys.com/dphi/datasets/235/train_dataset.csv?AWSAccessKeyId=ABSZWDH67WW3G8YX40WD&Signature=grICrBULEG%2BOVN0Gma2tTywZ00w%3D&Expires=1657384524" 
+              target="_blank" rel="noopener noreferrer">train dataset</a>
+              <br>
+              <a class="left_pad" 
+              href="https://s3.us-west-1.wasabisys.com/dphi/datasets/235/test_dataset.csv?AWSAccessKeyId=ABSZWDH67WW3G8YX40WD&Signature=L5OsP9eBx9kWHsOexG8pnvsJVgA%3D&Expires=1657384524" 
+              target="_blank" rel="noopener noreferrer">test dataset</a>
+          </div></div>
+      </div>
+        
+  
+      </div>
+      <!-- notebooks -->
+      <div class="tab-pane fade" id="pills-notebooks" role="tabpanel" aria-labelledby="pills-notebooks-tab" tabindex="0">
+      
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand">All Notebooks</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2  rounded-pill" type="search" placeholder="🔎 Search" aria-label="Search">
+            </form>
+            <div class="dropdown">
+              <a class="btn bg-secondary text-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                newest
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Newest</a></li>
+                <li><a class="dropdown-item" href="#">Oldest</a></li>
+                <li><a class="dropdown-item" href="#">Top Voted</a></li>
+                <li><a class="dropdown-item" href="#"> Most Views</a></li>
+              </ul>
+            </div>
+           
+            
+          </div>
+          
+        </nav>
+      
+      
+         <div class="note_g">
+          <!-- style="width: 75%;" -->
+          <div>
+              <div class="card">
+                  <div class="card-body">
+                    <div class="note_g1">
+                      <div>
+                         <p> <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm4%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%203h5v1H0V3z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%202h1v1H0V2zm2%200h1v1H2V2zm2%200h1v1H4V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%200h3v1H1V0z%22%20fill%3D%22%2326A69A%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="note_img" >
+                          <h6>Logistic Regression baseline</h6>
+                          <br>stiwaribr
+                          <br>
+                          <small>Tags: #python #classification #beginner #data-sprint #machine-learning</small>
+      
+      
+                          </p>
+                      </div>
+                      <div>
+                         <p> <small class="padding_a"><i class="fa-solid fa-caret-up"></i> 0 </small>
+                           <small class="padding_a"><i class="fa-solid fa-eye"></i> 40</small>
+                            <small class="padding_a">26 days ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div>
+              <div class="card">
+                  <div class="card-body">
+                    <div class="note_g1">
+                      <div>
+                         <p> <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm2%200h1v1H2V4zm2%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%203h3v1H1V3z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="note_img" >
+                          <h6>dphi-sprint78-Equestrian
+                              </h6>
+                          <br>navinp0304
+                          <br>
+                          <small>Tags: #python</small>
+      
+      
+                          </p>
+                      </div>
+                      <div>
+                         <p> <small class="padding_a"><i class="fa-solid fa-caret-up"></i> 0 </small> 
+                          <small class="padding_a"><i class="fa-solid fa-eye"></i> 16</small>
+                           <small class="padding_a">27 days ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          </div>
+         </div>
+         <div></div>
+  
+      </div></div>
+      <!-- discussion -->
+      <div class="tab-pane fade" id="pills-discussion" role="tabpanel" aria-labelledby="pills-discussion-tab" tabindex="0">
+       
+        <a href="https://discuss.dphi.tech/t/ai-data-science-challenges-dphi/3838" class="btn-primary" target="_blank" rel="noopener noreferrer">Start Discussion</a>
+        <hr>
+  
+      </div>
+      <!-- leaderboarder -->
+      <div class="tab-pane fade" id="pills-leaderboarder" role="tabpanel" aria-labelledby="pills-leaderboarder-tab" tabindex="0">
+        <!--  -->
+        <ul class="nav np nav-pills mb-3" id="pills-tab" role="tablist" style="padding: 2rem;">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-practice-tab" data-bs-toggle="pill" data-bs-target="#pills-practice" type="button" role="tab" aria-controls="pills-practice" aria-selected="true">Practice</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-challenge-tab" data-bs-toggle="pill" data-bs-target="#pills-challenge" type="button" role="tab" aria-controls="pills-challenge" aria-selected="false">Challenge</button>
+          </li>
+          <li class="lead_pad">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2 lead_sea" type="search" placeholder="🔎 Search"
+                   aria-label="Search">
+                  <button class="btn" type="submit"><i class="fa-solid fa-rotate-left"></i></button>
+                </form>
+          </li>
+        </ul>
+        <div class="tab-content " id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-practice" role="tabpanel" aria-labelledby="pills-practice-tab" tabindex="0">
+              <!--practice  -->
+              <div class="leader_grid1 container">
+              
+                  <div class="First">
+                              <div class="leader_grid1_sub">
+                          <div><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm2%200h1v1H2V3zm2%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%201h1v1H0V1zm4%200h1v1H4V1z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>ijeffking</h6>
+                           <br>Score: 63.9913</div>
+                           <div>
+                           <img src="	https://dphi.tech/static/images/practice/icons/medal-rank-1.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                        
+                  </div>
+                  <div class="second">
+                      <div class="leader_grid1_sub">
+                          <div><img 
+                              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%23D4E157%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>jaybhaskar</h6>
+                           <br>Score: 63.7527</div>
+                           <div>
+                           <img src="https://dphi.tech/static/images/practice/icons/medal-rank-2.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                  </div>
+                  <div class="third">
+                      <div class="leader_grid1_sub">
+                          <div><img 
+                              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm4%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                              alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>devam</h6>
+                           <br>Score: 63.6226</div>
+                           <div>
+                           <img src="https://dphi.tech/static/images/practice/icons/medal-rank-3.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                  </div>
+               </div>
+          
+               <br>
+               <div class="container leader_grid2">
+                  <div class="leader_grid2_sub">
+                      <div><h5>Rank</h5></div>
+                      <div><h6>Participant/team</h6></div>
+                      <div><h6>Score</h6></div>
+                      <div><h6>Time</h6></div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">1</div>
+                      <div>
+                          <p>ijeffking</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm2%200h1v1H2V3zm2%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%201h1v1H0V1zm4%200h1v1H4V1z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" 
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.9913</div>
+                      <div>13/06/22 06:50 am</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">2</div>
+                      <div>
+                          <p>	jaybhaskar</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%23D4E157%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="lead_img3">
+                      </div>
+                      <div>63.7527</div>
+                      <div>13/06/22 07:58 am</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">3</div>
+                      <div>
+                          <p>	devam</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm4%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.6226</div>
+                      <div>20/06/22 08:05 pm</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">4</div>
+                      <div>
+                          <p>navinp0304</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm2%200h1v1H2V4zm2%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%203h3v1H1V3z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="lead_img3">
+                      </div>
+                      <div>63.5141</div>
+                      <div>13/06/22 04:51 am</div>
+                  </div>
+                   
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">5</div>
+                      <div>
+                          <p>jasmeet_singh</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M2%204h1v1H2V4z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M2%202h1v1H2V2z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FF7043%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.3406</div>
+                      <div>13/06/22 03:33 pm</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">6</div>
+                      <div>
+                          <p>stiwari</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm4%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%203h5v1H0V3z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%202h1v1H0V2zm2%200h1v1H2V2zm2%200h1v1H4V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%200h3v1H1V0z%22%20fill%3D%22%2326A69A%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="lead_img3">
+                      </div>
+                      <div>62.9067</div>
+                      <div>13/06/22 03:17 pm</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">7</div>
+                      <div>
+                          <p>	micadee</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M2%204h1v1H2V4z%22%20fill%3D%22%238D6E63%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm2%200h1v1H2V3zm2%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%238D6E63%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%238D6E63%22%2F%3E%3Cpath%20d%3D%22M0%201h1v1H0V1zm4%200h1v1H4V1z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%238D6E63%22%2F%3E%3Cpath%20d%3D%22M1%200h3v1H1V0z%22%20fill%3D%22%238D6E63%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>50.4989</div>
+                      <div>16/06/22 09:30 pm</div>
+                  </div>
+               </div>
+          
+              <!--  -->
+          </div>
+          <div class="tab-pane fade" id="pills-challenge" role="tabpanel" aria-labelledby="pills-challenge-tab" tabindex="0">
+              <!-- challenge -->
+              <div class="leader_grid1 container">
+              
+                  <div class="First">
+                              <div class="leader_grid1_sub">
+                          <div><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm2%200h1v1H2V3zm2%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%201h1v1H0V1zm4%200h1v1H4V1z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>ijeffking</h6>
+                           <br>Score: 63.9913</div>
+                           <div>
+                           <img src="	https://dphi.tech/static/images/practice/icons/medal-rank-1.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                        
+                  </div>
+                  <div class="second">
+                      <div class="leader_grid1_sub">
+                          <div><img 
+                              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%23D4E157%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>jaybhaskar</h6>
+                           <br>Score: 63.7527</div>
+                           <div>
+                           <img src="https://dphi.tech/static/images/practice/icons/medal-rank-2.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                  </div>
+                  <div class="third">
+                      <div class="leader_grid1_sub">
+                          <div><img 
+                              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm2%200h1v1H2V4zm2%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%203h3v1H1V3z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                               alt="" class="lead_img1"> </div>
+                            <div>
+                           <h6>navinp0304</h6>
+                           <br>Score: 63.5141
+                          </div>
+                           <div>
+                           <img src="https://dphi.tech/static/images/practice/icons/medal-rank-3.svg" 
+                           alt=""class="lead_img2">
+                           </div>
+                          </div>
+                  </div>
+               </div>
+          
+               <br>
+               <div class="container leader_grid2">
+                  <div class="leader_grid2_sub">
+                      <div><h5>Rank</h5></div>
+                      <div><h6>Participant/team</h6></div>
+                      <div><h6>Score</h6></div>
+                      <div><h6>Time</h6></div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">1</div>
+                      <div>
+                          <p>ijeffking</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm2%200h1v1H2V3zm2%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%201h1v1H0V1zm4%200h1v1H4V1z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2329B6F6%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" 
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.9913</div>
+                      <div>13/06/22 06:50 am</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">2</div>
+                      <div>
+                          <p>	jaybhaskar</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M1%204h3v1H1V4z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M1%202h3v1H1V2z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%23D4E157%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%23D4E157%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="lead_img3">
+                      </div>
+                      <div>63.7527</div>
+                      <div>13/06/22 07:58 am</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">3</div>
+                      <div>
+                          <p>		navinp0304</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm2%200h1v1H2V4zm2%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M1%203h3v1H1V3z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%202h2v1H0V2zm3%200h2v1H3V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M0%201h5v1H0V1z%22%20fill%3D%22%235C6BC0%22%2F%3E%3Cpath%20d%3D%22M2%200h1v1H2V0z%22%20fill%3D%22%235C6BC0%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.5141</div>
+                      <div>13/06/22 05:40 am</div>
+                  </div>
+                  
+                   
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">4</div>
+                      <div>
+                          <p>jasmeet_singh</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M2%204h1v1H2V4z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M0%203h1v1H0V3zm4%200h1v1H4V3z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M2%202h1v1H2V2z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%23FF7043%22%2F%3E%3Cpath%20d%3D%22M0%200h1v1H0V0zm4%200h1v1H4V0z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%23FF7043%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                          alt="" class="lead_img3">
+                      </div>
+                      <div>63.3406</div>
+                      <div>13/06/22 03:33 pm</div>
+                  </div>
+                  <div class="leader_grid2_sub " style="text-align: center;">
+                      <div style="text-align: start;">5</div>
+                      <div>
+                          <p>stiwari</p>
+                          <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%205%205%22%20version%3D%221.1%22%20shape-rendering%3D%22crispEdges%22%3E%3Crect%20fill%3D%22%23eeeeee%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cg%20transform%3D%22translate(0.75%2C%200.75)%22%3E%3Cg%20transform%3D%22scale(0.7)%22%3E%3Crect%20fill%3D%22none%22%20width%3D%225%22%20height%3D%225%22%20x%3D%220%22%20y%3D%220%22%2F%3E%3Cpath%20d%3D%22M0%204h1v1H0V4zm4%200h1v1H4V4z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%203h5v1H0V3z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M0%202h1v1H0V2zm2%200h1v1H2V2zm2%200h1v1H4V2z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%201h3v1H1V1z%22%20fill%3D%22%2326A69A%22%2F%3E%3Cpath%20d%3D%22M1%200h3v1H1V0z%22%20fill%3D%22%2326A69A%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                           alt="" class="lead_img3">
+                      </div>
+                      <div>62.9067</div>
+                      <div>13/06/22 03:17 pm</div>
+                  </div>
+                  
+               </div>
+          
+              <!--  -->
+          </div>
+      
+        </div>
+      
+       <!--  -->
+      </div>
+        
+  </div>
+  
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<hr class="text-success">
+  <section>
+    <div style="padding-left: 2rem;">
+    <div id="grid2">
+        <div>
+            
+                <img 
+                src="https://dphi.tech/blog/wp-content/uploads/job-manager-uploads/company_logo/2022/02/main_logo_with_darktext_dphi.png" 
+                class="size" alt="" srcset="">
+               
+                <br>
+                
+            </div>
+        <div class="item-set2 ">
+            <h6><strong>Learn</strong> </h6>
+            <p>
+            <p><a href="https://dphi.tech/courses" target="_blank">Data Science & AI Courses</a></p>
+            <p><a
+                 href="https://dphi.tech/challenges/" 
+                 target="_blank">Practice Data Science & AI Challenges</a>
+            <p> <a
+                 href="https://dphi.tech/accounts/login/?next=/sso/discourse/%3Fsso%3Dbm9uY2U9NmZhN2U4M2RmNmE3ZTE5NjAwN2RjNTdlNjZjMWY3YjAmcmV0dXJuX3Nzb191cmw9aHR0cHMlM0ElMkYlMkZkaXNjdXNzLmRwaGkudGVjaCUyRnNlc3Npb24lMkZzc29fbG9naW4%253D%26sig%3Dc83e4143801b3c08710eea4bb5e7e809398785b5351481fe023957af76fba652" 
+                 target="_blank">Discussion forum</a></p>
+            <p><a 
+                href="https://dphi.tech/live-sessions"
+                 target="_blank">Data Science & AI Live Sessions</a></p>
+            <p><a href="https://dphi.tech/notebooks/all-notebooks/" target="_blank">Community Notebooks (Code Share)</a></p>
+            
+            </div>
+        <div class="item-set2 ">
+            <h6><strong>Getting Started</strong></h6>
+            
+                <p>
+               <p><a href="https://dphi.tech/courses/5-week_Data_Science_Bootcamp/" target="_blank">Data Science</a></p> 
+               <p><a href="https://dphi.tech/courses/machine-learning-bootcamp" target="_blank">Machine Learning</a></p> 
+               <p><a href="https://dphi.tech/courses/getting-started-with-deep-learning" target="_blank">Deep Learning</a></p> 
+               <p><a href="https://dphi.tech/courses/data-visualization-101" target="_blank">Data Visualization 101</a></p>
+               <p><a href="https://dphi.tech/courses/getting-started-with-natural-language-processing" target="_blank">Natural Language Processing 101</a></p>
+               <p><a href="https://dphi.tech/courses/time-series-101" target="_blank">Time Series 101</a></p>
+               </p>
+            
+        </div>
+        <div class="item-set2">
+            <h6><strong>More</strong></h6>
+            <p>
+               <p> <a href="https://dphi.tech/blog/ai-challenges/" target="_blank">
+                Host AI & Machine Learning Challenges</a></p> 
+               <p> <a href="https://dphi.tech/blog/" target="_blank">
+                Blog</a></p>
+               <p><a href="https://dphi.tech/blog/ai-challenges/" target="_blank">
+                Learner Stories</a></p> 
+               </p>
+        </div>
+        <div class="item-set2">
+            <h6><strong>Organization</strong></h6>
+            <p>
+               <p> <a href="" target="_blank">About Us</a></p> 
+               <p> <a href="https://hevodata.com/blog/bigquery-etl/" target="_blank">Contact Us</a></p>
+            </p>
+            <p class="text-dark">Social Media</p>
+            <p>
+                <a href="" target="_blank" class="round"><i class="fa-brands fa-facebook "></i></a>
+                <a href="" target="_blank"class="round" ><i class="fa-brands fa-linkedin "></i></a>
+                <a href="" target="_blank" class="round"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="" target="_blank" class="round"><i class="fa-brands fa-youtube-square"></i></a>
+            </p>
+        </div>
+        </div>
+        
+        </div>
+        </section>
+<p > Webpage recreated by Reeva Singh <sup>&copy;</sup> 2022  
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+</body>
+</html>
